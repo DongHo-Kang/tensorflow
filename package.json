@@ -1,0 +1,12 @@
+{
+  "name": "tensorflow",
+  "version": "1.0.0",
+  "description": "teachable machine과 tensorflow를 활용한 가든닥터의 사물 인식 AI",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
