@@ -93,7 +93,7 @@
 
       // the link to your model provided by Teachable Machine export panel
 
-      const URL = "";
+      let URL = "";
 
       function updateURL(select) {
         if (select == "grape") {
@@ -110,6 +110,7 @@
       // Load the image model and setup the webcam
       async function init() {
         const modelURL = URL + "model.json";
+        console.log("modelURL", modelURL);
         const metadataURL = URL + "metadata.json";
 
         // load the model and metadata
