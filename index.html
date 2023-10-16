@@ -10,6 +10,9 @@
     <div>Teachable Machine Image Model</div>
     <button type="button" onclick="init()">Start</button>
     <button type="button" onclick="predict()">예측</button>
+    <br />
+    <button type="button" onclick="updateURL('aubergine')">가지</button>
+    <button type="button" onclick="updateURL('grape')">포도</button>
     <script
       class="jsbin"
       src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
@@ -89,7 +92,18 @@
       // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
       // the link to your model provided by Teachable Machine export panel
-      const URL = "./my_model/";
+
+      const URL = "";
+
+      function updateURL(select) {
+        if (select == "grape") {
+          URL = "https://teachablemachine.withgoogle.com/models/qX_qUo9Fg/"; //포도
+        } else if (select == "aubergine") {
+          URL = "https://teachablemachine.withgoogle.com/models/_iqMdmzJL/"; //가지
+        }
+      }
+
+      console.log("URL", URL);
 
       let model, webcam, labelContainer, maxPredictions;
 
